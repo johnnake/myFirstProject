@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxw.dao.StoryResouceDao">
+
+    <!-- 分页查询StoryResource -->
+    <select id="findAllWithPagination" resultType="StoryResouce">
+        SELECT * FROM story1 ORDER BY id LIMIT #{offset}, #{limit}
+    </select>
+
+<!--    <select id="findStoriesByImageIdWithPagination" resultType="StoryResouce">-->
+<!--        SELECT sd.*-->
+<!--        FROM story1 sd-->
+<!--        JOIN story_image si ON sd.imageId = si.id-->
+<!--        WHERE si.id =#{imageId}-->
+<!--        ORDER BY sd.id-->
+<!--        LIMIT #{offset},#{limit}-->
+<!--          </select>-->
+
+    <select id="findStoriesByImageIdWithPagination" resultType="StoryResouce">
+        SELECT
+        s.id,
+        s.storyname,
+        s.story,
+        GROUP_CONCAT(DISTINCT r.Name ORDER BY r.Name SEPARATOR ', ') AS Names
+        FROM
+        story1 s
+        LEFT JOIN rolesava r ON s.id = r.storyId
+        JOIN story_image si ON s.imageId = si.id AND si.id =#{imageId}
+        GROUP BY s.id
+        ORDER BY s.id
+        LIMIT #{offset}, #{limit};
+    </select>
+
+
+
+    <!-- 查询总记录数 -->
+    <select id="getTotalCount" resultType="int">
+        SELECT COUNT(*) FROM story1
+    </select>
+
+    <select id="getTotalCountByImageId" resultType="int">
+        SELECT COUNT(*)
+        FROM story1 sd
+        JOIN story_image si ON sd.imageId = si.id
+        WHERE si.id = #{imageId}
+    </select>
+
+    <update id="updateStory">
+        UPDATE story1 SET storyName = #{StoryName}, story = #{Story} WHERE id = #{id}
+    </update>
+
+    <!-- 其他映射配置... -->
+    <select id="findAll" resultType="StoryResouce">
+        SELECT * FROM story1
+    </select>
+
+    <select id="findById" resultType="StoryResouce">
+        SELECT * FROM story1 WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="StoryResouce">
+        INSERT INTO story1(storyname,story,imageId) VALUES(#{StoryName},#{Story},#{imageId})
+    </insert>
+
+
+    <delete id="delete"  parameterType="String">
+        DELETE FROM story1 WHERE id=#{id}
+    </delete>
+
+    <!-- 根据story_image的id查询story1表中的关联数据 -->
+    <select id="findStoriesByImageId" resultType="StoryResouce">
+        SELECT sd.*
+        FROM story1 sd
+        JOIN story_image si ON sd.imageId = si.id
+        WHERE si.id = #{imageId}
+    </select>
+
+</mapper>

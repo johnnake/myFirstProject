@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxw.dao.CharacterResponseDao">
+    <select id="queryAllRole" resultType="CharacterResponse">
+        SELECT * FROM rolesava
+    </select>
+
+    <insert id="addRole" parameterType="CharacterResponse">
+        INSERT INTO rolesava(Name,RoleHigh,BodyDetail,Clothes,Belt,Face,`Character`,storyId) VALUES(#{name},#{roleHigh},#{bodyDetail},#{clothes},#{belt},#{face},#{character},#{storyId})
+    </insert>
+
+
+    <delete id="deleteRole"  parameterType="String">
+        DELETE FROM rolesava WHERE id=#{id}
+    </delete>
+
+    <select id="queryAllIdNameStoryId"  resultType="CharacterResponse">
+        SELECT id,Name as name,storyId FROM rolesava
+    </select>
+
+    <update id="updateCharacterStoryId">
+        UPDATE rolesava SET Name=#{name},storyId = #{storyId} WHERE id = #{id}
+    </update>
+
+
+</mapper>

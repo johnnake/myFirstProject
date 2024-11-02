@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxw.dao.NovelDescribeDao">
+
+    <select id="findNovelDescribeByNovelId" resultType="NovelDescribe">
+        SELECT  id,Novel_describe as novelDescribe,novel_id as novelId
+        FROM novel_describe  WHERE  novel_id= #{novelId}
+    </select>
+
+    <insert id="insertNovelDescribe" parameterType="NovelDescribe">
+        INSERT INTO novel_describe(Novel_describe,novel_id) VALUES(#{novelDescribe},#{novelId})
+    </insert>
+
+
+    <delete id="delete"  parameterType="String">
+        DELETE FROM novel_describe WHERE id=#{id}
+    </delete>
+
+    <update id="updateNovelDescribe">
+        UPDATE novel_describe SET Novel_describe = #{novelDescribe} WHERE id = #{id}
+    </update>
+
+
+</mapper>

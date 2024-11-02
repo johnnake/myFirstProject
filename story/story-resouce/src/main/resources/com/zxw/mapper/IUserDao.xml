@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxw.dao.IUserDao">
+    <insert id="insertUser" parameterType="userInfo">
+        INSERT INTO t_user_info (
+        username,
+        login_id,
+        PASSWORD,
+        user_type,
+        create_time,
+        update_time
+        )
+        VALUES(
+        #{username},
+        #{loginId},
+        #{password},
+        #{userType},
+        NOW(),
+        NOW()
+        )
+    </insert>
+
+    <select id="findUserInfoByLoginId" parameterType="string" resultType="userInfo">
+        select
+        user_id as userId,
+        login_id as loginId,
+        username,
+        PASSWORD,
+        user_type as userType,
+        create_time as createTime,
+        update_time as updateTime
+        from t_user_info
+        where login_id=#{loginId}
+    </select>
+
+    <select id="findList" resultType="userInfo">
+        select
+        user_id as userId,
+        login_id as loginId,
+        username,
+        PASSWORD,
+        user_type as userType,
+        case when user_type='1' then 'admin' else 'custom' end as userTypeStr,
+        create_time as createTime,
+        update_time as updateTime
+        from t_user_info
+    </select>
+
+    <update id="updateUserType">
+        update t_user_info set user_type=#{userType} where user_id=#{userId}
+    </update>
+
+    <delete id="delete">
+        delete from t_user_info where user_id=#{userId}
+    </delete>
+</mapper>

@@ -1,0 +1,14 @@
+创建故事表
+CREATE TABLE story1 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    storyname VARCHAR(100) NOT NULL,
+    story TEXT NOT NULL,
+    user_id INT NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES t_user_info(user_id)
+);
+
+CREATE TABLE story1 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    storyname VARCHAR(100) NOT NULL,
+    story TEXT NOT NULL,
+);

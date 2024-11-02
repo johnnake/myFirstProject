@@ -1,0 +1,167 @@
+2024-06-08 22:20:02.463  INFO 4608 --- [main] com.zxw.AppApplication                   : Starting AppApplication on deng with PID 4608 (C:\Users\dengy\OneDrive\Desktop\story-resouce\target\classes started by dengy in C:\Users\dengy\OneDrive\Desktop\story-resouce)
+2024-06-08 22:20:02.485  INFO 4608 --- [main] com.zxw.AppApplication                   : No active profile set, falling back to default profiles: default
+2024-06-08 22:20:04.121  INFO 4608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-06-08 22:20:04.221  INFO 4608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 1 repository interfaces.
+2024-06-08 22:20:04.357  WARN 4608 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'storyImageRepository' and 'com.zxw.dao.storyImageRepository' mapperInterface. Bean already defined with the same name!
+2024-06-08 22:20:04.633  INFO 4608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-08 22:20:04.657  INFO 4608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-08 22:20:04.660  INFO 4608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-08 22:20:04.661  INFO 4608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1bf14704' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-08 22:20:04.663  INFO 4608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-08 22:20:04.666  INFO 4608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-08 22:20:05.396  INFO 4608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2024-06-08 22:20:05.408  INFO 4608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-08 22:20:05.409  INFO 4608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2024-06-08 22:20:05.559  INFO 4608 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-08 22:20:05.560  INFO 4608 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2854 ms
+2024-06-08 22:20:05.831  INFO 4608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-08 22:20:06.397  INFO 4608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-08 22:20:06.466  INFO 4608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-08 22:20:06.620  INFO 4608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.8.Final}
+2024-06-08 22:20:06.832  INFO 4608 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-06-08 22:20:06.962  INFO 4608 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-06-08 22:20:07.574  INFO 4608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-08 22:20:07.586  INFO 4608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 22:20:07.629  WARN 4608 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-08 22:20:08.918  INFO 4608 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-06-08 22:20:09.049  INFO 4608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-06-08 22:20:09.312  INFO 4608 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15096b0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@d082916, org.springframework.security.web.header.HeaderWriterFilter@627ad446, org.springframework.web.filter.CorsFilter@67748053, org.springframework.security.web.authentication.logout.LogoutFilter@1978eab7, com.zxw.filter.TokenFilter@7da59f6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ddc9001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f51d1cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fb8d720, org.springframework.security.web.session.SessionManagementFilter@1ae2028d, org.springframework.security.web.access.ExceptionTranslationFilter@64821706, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32f8a37b]
+2024-06-08 22:20:09.342  INFO 4608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-06-08 22:20:09.367  INFO 4608 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-06-08 22:20:09.390  INFO 4608 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-06-08 22:20:09.581  INFO 4608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByNovelIdUsingGET_1
+2024-06-08 22:20:09.584  INFO 4608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2024-06-08 22:20:09.586  INFO 4608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateStoryUsingPUT_1
+2024-06-08 22:20:09.615  INFO 4608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_2
+2024-06-08 22:20:09.617  INFO 4608 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateStoryUsingPUT_2
+2024-06-08 22:20:09.680  INFO 4608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2024-06-08 22:20:09.682  INFO 4608 --- [main] com.zxw.AppApplication                   : Started AppApplication in 9.39 seconds (JVM running for 15.906)
+2024-06-08 22:35:49.177  INFO 4608 --- [http-nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-08 22:35:49.178  INFO 4608 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-08 22:35:49.189  INFO 4608 --- [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2024-06-08 22:35:49.276  INFO 4608 --- [http-nio-8084-exec-3] com.zxw.controller.LoginController       : --开始认证--
+2024-06-08 22:35:49.369 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.dao.IUserDao.findUserInfoByLoginId   : ==>  Preparing: select user_id as userId, login_id as loginId, username, PASSWORD, user_type as userType, create_time as createTime, update_time as updateTime from t_user_info where login_id=?
+2024-06-08 22:35:49.388 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.dao.IUserDao.findUserInfoByLoginId   : ==> Parameters: 1234(String)
+2024-06-08 22:35:49.409 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.dao.IUserDao.findUserInfoByLoginId   : <==      Total: 1
+2024-06-08 22:35:49.474 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.dao.IUserDao.findUserInfoByLoginId   : ==>  Preparing: select user_id as userId, login_id as loginId, username, PASSWORD, user_type as userType, create_time as createTime, update_time as updateTime from t_user_info where login_id=?
+2024-06-08 22:35:49.476 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.dao.IUserDao.findUserInfoByLoginId   : ==> Parameters: 1234(String)
+2024-06-08 22:35:49.476 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.dao.IUserDao.findUserInfoByLoginId   : <==      Total: 1
+2024-06-08 22:35:49.476  INFO 4608 --- [http-nio-8084-exec-3] com.zxw.controller.LoginController       : 认证结束
+2024-06-08 22:35:52.585 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:35:52.585 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:35:52.592 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 22:35:55.634 DEBUG 4608 --- [http-nio-8084-exec-5] z.d.S.findStoriesByImageIdWithPagination : ==>  Preparing: SELECT s.id, s.storyname, s.story, GROUP_CONCAT(DISTINCT r.Name ORDER BY r.Name SEPARATOR ', ') AS Names FROM story1 s LEFT JOIN rolesava r ON s.id = r.storyId JOIN story_image si ON s.imageId = si.id AND si.id =? GROUP BY s.id ORDER BY s.id LIMIT ?, ?;
+2024-06-08 22:35:55.635 DEBUG 4608 --- [http-nio-8084-exec-5] z.d.S.findStoriesByImageIdWithPagination : ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-06-08 22:35:55.638 DEBUG 4608 --- [http-nio-8084-exec-5] z.d.S.findStoriesByImageIdWithPagination : <==      Total: 10
+2024-06-08 22:35:55.639 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.getTotalCountByImageId           : ==>  Preparing: SELECT COUNT(*) FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:35:55.640 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.getTotalCountByImageId           : ==> Parameters: 1(Integer)
+2024-06-08 22:35:55.642 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.getTotalCountByImageId           : <==      Total: 1
+2024-06-08 22:37:14.377 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:37:14.378 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:37:14.381 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 22:37:18.189 DEBUG 4608 --- [http-nio-8084-exec-2] com.zxw.dao.StoryResouceDao.findById     : ==>  Preparing: SELECT * FROM story1 WHERE id = ?
+2024-06-08 22:37:18.189 DEBUG 4608 --- [http-nio-8084-exec-2] com.zxw.dao.StoryResouceDao.findById     : ==> Parameters: 10(String)
+2024-06-08 22:37:18.190 DEBUG 4608 --- [http-nio-8084-exec-2] com.zxw.dao.StoryResouceDao.findById     : <==      Total: 1
+2024-06-08 22:38:02.890 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 22:38:02.891 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 235：提升天赋术法，眼球族新任务(String), 本体在藏书阁观看功法，任务是探查人族实力(String), 10(String)
+2024-06-08 22:38:02.894 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 22:38:02.905 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:38:02.905 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:38:02.907 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 22:38:05.948 DEBUG 4608 --- [http-nio-8084-exec-1] com.zxw.dao.StoryResouceDao.findById     : ==>  Preparing: SELECT * FROM story1 WHERE id = ?
+2024-06-08 22:38:05.948 DEBUG 4608 --- [http-nio-8084-exec-1] com.zxw.dao.StoryResouceDao.findById     : ==> Parameters: 11(String)
+2024-06-08 22:38:05.949 DEBUG 4608 --- [http-nio-8084-exec-1] com.zxw.dao.StoryResouceDao.findById     : <==      Total: 1
+2024-06-08 22:38:13.165 DEBUG 4608 --- [http-nio-8084-exec-9] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 22:38:13.166 DEBUG 4608 --- [http-nio-8084-exec-9] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: (String), (String), 11(String)
+2024-06-08 22:38:13.168 DEBUG 4608 --- [http-nio-8084-exec-9] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 22:38:13.174 DEBUG 4608 --- [http-nio-8084-exec-10] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:38:13.174 DEBUG 4608 --- [http-nio-8084-exec-10] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:38:13.176 DEBUG 4608 --- [http-nio-8084-exec-10] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 22:50:09.350 DEBUG 4608 --- [http-nio-8084-exec-3] com.zxw.dao.StoryResouceDao.findById     : ==>  Preparing: SELECT * FROM story1 WHERE id = ?
+2024-06-08 22:50:09.351 DEBUG 4608 --- [http-nio-8084-exec-3] com.zxw.dao.StoryResouceDao.findById     : ==> Parameters: 10(String)
+2024-06-08 22:50:09.352 DEBUG 4608 --- [http-nio-8084-exec-3] com.zxw.dao.StoryResouceDao.findById     : <==      Total: 1
+2024-06-08 22:50:38.911 DEBUG 4608 --- [http-nio-8084-exec-8] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 22:50:38.911 DEBUG 4608 --- [http-nio-8084-exec-8] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 235：提升天赋术法，眼球族新任务，擎天城(String), 本体在藏书阁观看功法，任务是探查人族实力(String), 10(String)
+2024-06-08 22:50:38.918 DEBUG 4608 --- [http-nio-8084-exec-8] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 22:50:38.923 DEBUG 4608 --- [http-nio-8084-exec-7] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:50:38.923 DEBUG 4608 --- [http-nio-8084-exec-7] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:50:38.924 DEBUG 4608 --- [http-nio-8084-exec-7] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 22:50:49.110 DEBUG 4608 --- [http-nio-8084-exec-1] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 22:50:49.111 DEBUG 4608 --- [http-nio-8084-exec-1] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 235：提升天赋术法，眼球族新任务，多眼人擎天城(String), 本体在藏书阁观看功法，任务是探查人族实力(String), 10(String)
+2024-06-08 22:50:49.118 DEBUG 4608 --- [http-nio-8084-exec-1] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 22:50:49.123 DEBUG 4608 --- [http-nio-8084-exec-4] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:50:49.123 DEBUG 4608 --- [http-nio-8084-exec-4] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:50:49.125 DEBUG 4608 --- [http-nio-8084-exec-4] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 22:52:36.217 DEBUG 4608 --- [http-nio-8084-exec-6] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 22:52:36.218 DEBUG 4608 --- [http-nio-8084-exec-6] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 235：提升天赋术法，眼球族新任务，多眼人擎天城(String), 本体在藏书阁观看功法，任务是探查人族实力(String), 10(String)
+2024-06-08 22:52:36.219 DEBUG 4608 --- [http-nio-8084-exec-6] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 22:52:36.224 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 22:52:36.224 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 22:52:36.225 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 23:22:04.253 DEBUG 4608 --- [http-nio-8084-exec-8] com.zxw.dao.StoryResouceDao.findById     : ==>  Preparing: SELECT * FROM story1 WHERE id = ?
+2024-06-08 23:22:04.253 DEBUG 4608 --- [http-nio-8084-exec-8] com.zxw.dao.StoryResouceDao.findById     : ==> Parameters: 6(String)
+2024-06-08 23:22:04.255 DEBUG 4608 --- [http-nio-8084-exec-8] com.zxw.dao.StoryResouceDao.findById     : <==      Total: 1
+2024-06-08 23:22:14.053 DEBUG 4608 --- [http-nio-8084-exec-5] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 23:22:14.054 DEBUG 4608 --- [http-nio-8084-exec-5] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 第230章：潜入任务(String), 破环人族大阵任务，奴隶林宛儿(String), 6(String)
+2024-06-08 23:22:14.056 DEBUG 4608 --- [http-nio-8084-exec-5] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 23:22:14.066 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 23:22:14.067 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 23:22:14.069 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 23:27:38.867 DEBUG 4608 --- [http-nio-8084-exec-9] com.zxw.dao.StoryResouceDao.findById     : ==>  Preparing: SELECT * FROM story1 WHERE id = ?
+2024-06-08 23:27:38.867 DEBUG 4608 --- [http-nio-8084-exec-9] com.zxw.dao.StoryResouceDao.findById     : ==> Parameters: 11(String)
+2024-06-08 23:27:38.868 DEBUG 4608 --- [http-nio-8084-exec-9] com.zxw.dao.StoryResouceDao.findById     : <==      Total: 1
+2024-06-08 23:28:10.108 DEBUG 4608 --- [http-nio-8084-exec-6] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 23:28:10.108 DEBUG 4608 --- [http-nio-8084-exec-6] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 236(String), 天空城，双修法(String), 11(String)
+2024-06-08 23:28:10.111 DEBUG 4608 --- [http-nio-8084-exec-6] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 23:28:10.116 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 23:28:10.116 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 23:28:10.118 DEBUG 4608 --- [http-nio-8084-exec-3] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 23:28:12.952 DEBUG 4608 --- [http-nio-8084-exec-2] com.zxw.dao.StoryResouceDao.findById     : ==>  Preparing: SELECT * FROM story1 WHERE id = ?
+2024-06-08 23:28:12.953 DEBUG 4608 --- [http-nio-8084-exec-2] com.zxw.dao.StoryResouceDao.findById     : ==> Parameters: 11(String)
+2024-06-08 23:28:12.953 DEBUG 4608 --- [http-nio-8084-exec-2] com.zxw.dao.StoryResouceDao.findById     : <==      Total: 1
+2024-06-08 23:28:56.588 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.StoryResouceDao.updateStory  : ==>  Preparing: UPDATE story1 SET storyName = ?, story = ? WHERE id = ?
+2024-06-08 23:28:56.589 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.StoryResouceDao.updateStory  : ==> Parameters: 236(String), 眼族天空城，双修法(String), 11(String)
+2024-06-08 23:28:56.591 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.StoryResouceDao.updateStory  : <==    Updates: 1
+2024-06-08 23:28:56.596 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 23:28:56.597 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 23:28:56.598 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 23:29:03.908 DEBUG 4608 --- [http-nio-8084-exec-4] c.z.d.CharacterResponseDao.queryAllRole  : ==>  Preparing: SELECT * FROM rolesava
+2024-06-08 23:29:03.908 DEBUG 4608 --- [http-nio-8084-exec-4] c.z.d.CharacterResponseDao.queryAllRole  : ==> Parameters: 
+2024-06-08 23:29:03.910 DEBUG 4608 --- [http-nio-8084-exec-4] c.z.d.CharacterResponseDao.queryAllRole  : <==      Total: 11
+2024-06-08 23:29:04.528 DEBUG 4608 --- [http-nio-8084-exec-9] c.z.d.CharacterResponseDao.queryAllRole  : ==>  Preparing: SELECT * FROM rolesava
+2024-06-08 23:29:04.528 DEBUG 4608 --- [http-nio-8084-exec-9] c.z.d.CharacterResponseDao.queryAllRole  : ==> Parameters: 
+2024-06-08 23:29:04.532 DEBUG 4608 --- [http-nio-8084-exec-9] c.z.d.CharacterResponseDao.queryAllRole  : <==      Total: 11
+2024-06-08 23:29:22.822 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : ==>  Preparing: SELECT sd.* FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 23:29:22.822 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : ==> Parameters: 1(Integer)
+2024-06-08 23:29:22.824 DEBUG 4608 --- [http-nio-8084-exec-5] c.z.d.S.findStoriesByImageId             : <==      Total: 14
+2024-06-08 23:29:25.595 DEBUG 4608 --- [http-nio-8084-exec-8] z.d.S.findStoriesByImageIdWithPagination : ==>  Preparing: SELECT s.id, s.storyname, s.story, GROUP_CONCAT(DISTINCT r.Name ORDER BY r.Name SEPARATOR ', ') AS Names FROM story1 s LEFT JOIN rolesava r ON s.id = r.storyId JOIN story_image si ON s.imageId = si.id AND si.id =? GROUP BY s.id ORDER BY s.id LIMIT ?, ?;
+2024-06-08 23:29:25.596 DEBUG 4608 --- [http-nio-8084-exec-8] z.d.S.findStoriesByImageIdWithPagination : ==> Parameters: 1(Integer), 0(Integer), 10(Integer)
+2024-06-08 23:29:25.603 DEBUG 4608 --- [http-nio-8084-exec-8] z.d.S.findStoriesByImageIdWithPagination : <==      Total: 10
+2024-06-08 23:29:25.604 DEBUG 4608 --- [http-nio-8084-exec-8] c.z.d.S.getTotalCountByImageId           : ==>  Preparing: SELECT COUNT(*) FROM story1 sd JOIN story_image si ON sd.imageId = si.id WHERE si.id = ?
+2024-06-08 23:29:25.604 DEBUG 4608 --- [http-nio-8084-exec-8] c.z.d.S.getTotalCountByImageId           : ==> Parameters: 1(Integer)
+2024-06-08 23:29:25.605 DEBUG 4608 --- [http-nio-8084-exec-8] c.z.d.S.getTotalCountByImageId           : <==      Total: 1
+2024-06-08 23:29:27.801 DEBUG 4608 --- [http-nio-8084-exec-7] c.z.d.MainRoleDao.findMainRoleByNovelId  : ==>  Preparing: SELECT id, role_name as RoleName, role_skill as RoleSkill,role_text as RoleText ,novel_id as novelId FROM main_role WHERE novel_id= ?
+2024-06-08 23:29:27.801 DEBUG 4608 --- [http-nio-8084-exec-7] c.z.d.MainRoleDao.findMainRoleByNovelId  : ==> Parameters: 1(Integer)
+2024-06-08 23:29:27.803 DEBUG 4608 --- [http-nio-8084-exec-7] c.z.d.MainRoleDao.findMainRoleByNovelId  : <==      Total: 1
+2024-06-08 23:30:55.047 DEBUG 4608 --- [http-nio-8084-exec-4] com.zxw.dao.MainRoleDao.updateMainRole   : ==>  Preparing: UPDATE main_role SET role_name = ?, role_skill = ?, role_text = ? WHERE id = ?
+2024-06-08 23:30:55.047 DEBUG 4608 --- [http-nio-8084-exec-4] com.zxw.dao.MainRoleDao.updateMainRole   : ==> Parameters: 林不二(String), 天赋术法：替换（天仙），替死（真仙）可选择两位进行替死，分身（30：真仙），意识分裂：（32：渡劫），寄存（渡劫），赋能魔化（渡劫），第十条命（渡劫），召唤（6：用3，真仙），被窃取的污秽（半步仙王）
+金手指：融合，升级术法，吸取其他种族天赋，可使用魂点加快升级。
+法则：污秽法则之躯（百分之十），时空，雷，冰，五行，(String), 境界：半步仙王 ，功法：游鱼诀（渡劫级），仙帝道诀（仙帝级），真仙魂点：80200，玄仙：10000，地仙：500，天仙：1000
+，分身1-14号都在仙帝道宗内的仙王通天塔晋升仙王（2号除外），2号在配爱利亚丝和莫利亚薇，15号在托斯一林那，剩下的5位在前线眼球族和人族前线(String), 1(Integer)
+2024-06-08 23:30:55.051 DEBUG 4608 --- [http-nio-8084-exec-4] com.zxw.dao.MainRoleDao.updateMainRole   : <==    Updates: 1
+2024-06-08 23:30:56.808 DEBUG 4608 --- [http-nio-8084-exec-6] c.z.d.MainRoleDao.findMainRoleByNovelId  : ==>  Preparing: SELECT id, role_name as RoleName, role_skill as RoleSkill,role_text as RoleText ,novel_id as novelId FROM main_role WHERE novel_id= ?
+2024-06-08 23:30:56.808 DEBUG 4608 --- [http-nio-8084-exec-6] c.z.d.MainRoleDao.findMainRoleByNovelId  : ==> Parameters: 1(Integer)
+2024-06-08 23:30:56.813 DEBUG 4608 --- [http-nio-8084-exec-6] c.z.d.MainRoleDao.findMainRoleByNovelId  : <==      Total: 1
+2024-06-08 23:31:18.524 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.MainRoleDao.updateMainRole   : ==>  Preparing: UPDATE main_role SET role_name = ?, role_skill = ?, role_text = ? WHERE id = ?
+2024-06-08 23:31:18.525 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.MainRoleDao.updateMainRole   : ==> Parameters: 林不二(String), 天赋术法：替换（天仙），替死（真仙）可选择两位进行替死，分身（30：真仙），意识分裂：（32：真仙），寄存（真仙），赋能魔化（真仙），第十条命（真仙），召唤（6：用3，真仙），被窃取的污秽（半步仙王）
+金手指：融合，升级术法，吸取其他种族天赋，可使用魂点加快升级。
+法则：污秽法则之躯（百分之十），时空，雷，冰，五行，(String), 境界：半步仙王 ，功法：游鱼诀（渡劫级），仙帝道诀（仙帝级），真仙魂点：80200，玄仙：10000，地仙：500，天仙：1000
+，分身1-14号都在仙帝道宗内的仙王通天塔晋升仙王（2号除外），2号在配爱利亚丝和莫利亚薇，15号在托斯一林那，剩下的5位在前线眼球族和人族前线(String), 1(Integer)
+2024-06-08 23:31:18.531 DEBUG 4608 --- [http-nio-8084-exec-7] com.zxw.dao.MainRoleDao.updateMainRole   : <==    Updates: 1
+2024-06-08 23:31:19.777 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.N.findNovelDescribeByNovelId       : ==>  Preparing: SELECT id,Novel_describe as novelDescribe,novel_id as novelId FROM novel_describe WHERE novel_id= ?
+2024-06-08 23:31:19.777 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.N.findNovelDescribeByNovelId       : ==> Parameters: 1(Integer)
+2024-06-08 23:31:19.779 DEBUG 4608 --- [http-nio-8084-exec-1] c.z.d.N.findNovelDescribeByNovelId       : <==      Total: 1
+2024-06-08 23:31:57.413  INFO 4608 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-06-08 23:31:57.415  INFO 4608 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-08 23:31:57.417  INFO 4608 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-08 23:31:57.421  INFO 4608 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

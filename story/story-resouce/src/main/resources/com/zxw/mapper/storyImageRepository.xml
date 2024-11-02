@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zxw.dao.storyImageRepository">
+<!--    <select id="findAllByUserId" resultType="storyImage">-->
+<!--        SELECT-->
+<!--        id,-->
+<!--        image_name as imageName,-->
+<!--        image_url as imageUrl,-->
+<!--        novel_title as novelTitle,-->
+<!--        user_id as userId-->
+<!--        FROM story_image WHERE user_id=#{userId}-->
+<!--    </select>-->
+
+<!--    <select id="findAll" resultType="storyImage">-->
+<!--        SELECT * FROM story_image-->
+<!--    </select>-->
+
+<!--    <insert id="save" parameterType="storyImage">-->
+<!--        insert into story_image(image_name,image_url,novel_title) values(#{imageName},#{imageUrl},#{novelTitle})-->
+<!--    </insert>-->
+
+</mapper>
